@@ -1,0 +1,116 @@
+<ion-view cache-view="false" hide-back-button="true" role="region">
+    <ion-header-bar role="heading" class="bar bar-header bar-default" xattr-theme="bar-default"
+                    data-component="crn-ion-header-bar">
+        <div side="left" class="buttons buttons-left header-item">
+            <button aria-labelledby="left_navicon_sr" class="button button-clear"
+                    ng-if="!Endereco.inserting && !Endereco.editing" menu-toggle="left"
+                    data-component="crn-button" xattr-type="button-clear">
+                <i class="icon ion-navicon"></i>
+                <span id="left_navicon_sr"
+                      class="sr-only">{{'Accessibility.Button.Aria.Label.NavIcon' | translate}}</span>
+            </button>
+            <button aria-labelledby="left_arrowback_sr" class="button button-clear"
+                    ng-if="Endereco.inserting || Endereco.editing"
+                    ng-click="Endereco.cancel()" data-component="crn-button" xattr-type="button-clear">
+                <i class="icon ion-ios-arrow-back"></i>
+                <span id="left_arrowback_sr" class="sr-only">{{'Roles.view.Voltar' | translate}}</span>
+            </button>
+        </div>
+        <h1 class="title">Endereco</h1>
+        <div side="right" class="buttons buttons-right header-item">
+            <button aria-labelledby="right_plus_sr" class="button button-clear"
+                    ng-if="!Endereco.inserting && !Endereco.editing"
+                    ng-click="Endereco.startInserting()" data-component="crn-button"
+                    xattr-type="button-clear">
+                <i class="icon ion-ios-plus-empty"></i>
+                <span id="right_plus_sr" class="sr-only">{{'Accessibility.Button.Aria.Label.Add' | translate}}</span>
+            </button>
+            <button aria-labelledby="right_checkmark_sr" class="button button-clear"
+                    ng-if="Endereco.inserting || Endereco.editing"
+                    ng-click="Endereco.post()" data-component="crn-button" xattr-type="button-clear">
+                <i class="icon ion-ios-checkmark"></i>
+                <span id="right_checkmark_sr"
+                      class="sr-only">{{'Accessibility.Button.Aria.Label.Save' | translate}}</span>
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="component-holder ng-binding ng-scope ui-draggable ui-draggable-handle"
+             data-component="crn-datasource" id="crn-datasource-906854">
+            <datasource data-component="crn-datasource"  name="Endereco"
+                        entity="app.Endereco" keys="_objectKey" rows-per-page="10"
+                        delete-message="Deseja remover?" class=""
+                        schema="" ></datasource>
+        </div>
+
+        <div crn-datasource="Endereco" class="" ng-hide="Endereco.editing || Endereco.inserting">
+            <cron-list ng-model="vars.cronlistEndereco" id="ion-list-main" options="" class="component-holder ng-binding ng-scope" data-component="crn-ion-list" id="crn-ion-list-37723">
+            </cron-list>
+        </div>
+        <div ng-show="Endereco.editing || Endereco.inserting">
+            <form crn-datasource="Endereco">
+                <div class="list"
+                     ng-disabled="!Endereco.editing &amp;&amp; !Endereco.inserting">
+            <!-- ceP begin -->
+            <label for="textinput-ceP-37723" class="item item-input item-stacked-label"
+                   data-component="crn-input-floating" id="lbl-ceP-37723">
+                <span class="input-label">CEP</span>
+                <input
+                        type="text"
+                        placeholder="CEP"
+                        ng-model="Endereco.active.ceP"
+                        id="textinput-ceP-37723"
+                        name="textinput-ceP"
+				
+                        mask=""
+				>
+            </label>
+            <!-- logradouro begin -->
+            <label for="textinput-logradouro-37723" class="item item-input item-stacked-label"
+                   data-component="crn-input-floating" id="lbl-logradouro-37723">
+                <span class="input-label">Logradouro</span>
+                <input
+                        type="text"
+                        placeholder="Logradouro"
+                        ng-model="Endereco.active.logradouro"
+                        id="textinput-logradouro-37723"
+                        name="textinput-logradouro"
+				
+                        mask=""
+				>
+            </label>
+            <!-- bairro begin -->
+            <label for="textinput-bairro-37723" class="item item-input item-stacked-label"
+                   data-component="crn-input-floating" id="lbl-bairro-37723">
+                <span class="input-label">Bairro</span>
+                <input
+                        type="text"
+                        placeholder="Bairro"
+                        ng-model="Endereco.active.bairro"
+                        id="textinput-bairro-37723"
+                        name="textinput-bairro"
+				
+                        mask=""
+				>
+            </label>
+            <!-- uf begin -->
+            <label for="textinput-uf-37723" class="item item-input item-stacked-label"
+                   data-component="crn-input-floating" id="lbl-uf-37723">
+                <span class="input-label">UF</span>
+                <input
+                        type="text"
+                        placeholder="UF"
+                        ng-model="Endereco.active.uf"
+                        id="textinput-uf-37723"
+                        name="textinput-uf"
+				
+                        mask=""
+				>
+            </label>
+
+                    <!-- NtoN  -->
+                    <!-- NtoN  end-->
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,114 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="" primary-datasource="Endereco">
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-16012">Endereco</h1>
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-16012">Endereco</h1>
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-16012">Endereco</h1>
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-16012">Endereco</h1>
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-16012">Endereco</h1>
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-16012">Endereco</h1>
+<datasource data-component="crn-datasource" filter="" name="Endereco" entity="app.Endereco" keys="_objectKey" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;ceP&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;logradouro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" condition="{&quot;maxRecord&quot;:100,&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;ceP&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true" parameters="" dependent-lazy-post="" checkrequired=""></datasource>
+
+        <div role="search" ng-hide="Endereco.inserting || Endereco.editing" data-component="crn-textinput" id="crn-datasource-filter-general16012" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<section ng-hide="Endereco.editing || Endereco.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;Endereco&quot;,&quot;entity&quot;:&quot;app.Endereco&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.Endereco&quot;,&quot;customId&quot;:&quot;Endereco&quot;,&quot;name&quot;:&quot;Endereco&quot;,&quot;customQueryName&quot;:&quot;app.Endereco&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.Endereco&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;ceP&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;logradouro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;keys&quot;:&quot;_objectKey&quot;,&quot;rowsPerPage&quot;:&quot;100&quot;,&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;ceP&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;logradouro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;parameters&quot;:&quot;&quot;,&quot;condition&quot;:&quot;{\&quot;maxRecord\&quot;:100,\&quot;params\&quot;:[],\&quot;expression\&quot;:{\&quot;type\&quot;:\&quot;OR\&quot;,\&quot;args\&quot;:[{\&quot;type\&quot;:\&quot;%\&quot;,\&quot;left\&quot;:\&quot;ceP\&quot;,\&quot;right\&quot;:\&quot;{{vars.search|raw}}\&quot;,\&quot;args\&quot;:[]}]}}&quot;,&quot;dependentLazyPost&quot;:&quot;&quot;,&quot;lazy&quot;:&quot;true&quot;,&quot;checkrequired&quot;:&quot;&quot;,&quot;onBeforeCreate&quot;:&quot;&quot;,&quot;onAfterCreate&quot;:&quot;&quot;,&quot;onBeforeUpdate&quot;:&quot;&quot;,&quot;onAfterUpdate&quot;:&quot;&quot;,&quot;onBeforeDelete&quot;:&quot;&quot;,&quot;onAfterDelete&quot;:&quot;&quot;,&quot;onAfterFill&quot;:&quot;&quot;,&quot;dataComponent&quot;:&quot;crn-datasource&quot;,&quot;id&quot;:&quot;&quot;,&quot;oldName&quot;:&quot;&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;batchMode&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;pathView&quot;:&quot;src/main/webapp/views/logged/endereco.view.html&quot;,&quot;modelGrid&quot;:&quot;custom&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;ceP&quot;,&quot;headerText&quot;:&quot;CEP&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;logradouro&quot;,&quot;headerText&quot;:&quot;Logradouro&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;bairro&quot;,&quot;headerText&quot;:&quot;Bairro&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;},{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;pdf&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[],&quot;fillDatasource&quot;:false,&quot;enableModalSaveAdd&quot;:false}" ng-model="vars.grid16012" class="" style="" scrollable="false">
+    </cron-grid>
+</section>
+
+<div data-component="crn-form" id="crn-form-form-Endereco-16012">
+    <section class="form" ng-show="Endereco.editing || Endereco.inserting">
+        <form crn-datasource="Endereco" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startInserting">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startInserting()" aria-label="{{'StartInserting' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-plus" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startEditing">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startEditing()" aria-label="{{'startEditing' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-pencil" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-previous">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.previous()" ng-disabled="!datasource.hasPrevious()" aria-label="{{'Before' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-left" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-next">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.next()" ng-disabled="!datasource.hasNext()" aria-label="{{'Next' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-right" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-remove">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.remove()" aria-label="{{'Remove' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-remove" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_post_16012">
+                    <button class="btn k-button btn-block btn-success btn-fab" ng-click="datasource.post()" aria-label="{{'SaveChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ok" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_cancel_16012">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.cancel()" aria-label="{{'CancelChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ban-circle" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-386842"><button class="btn k-button btn-block btn-default" ng-click="cronapi.server('blockly.BlocoCEP.ConsultarCEP').run()" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled=""><i class="glyphicon glyphicon-home" icon-theme=""></i> <span class="" text-theme="">Consultar CEP</span></button></div><div data-component="crn-textinput" id="crn-textinput-ceP-16012" class="">
+                        <div class="form-group">
+                                <label for="textinput-ceP" class="">CEP</label>
+                                <input type="text" ng-model="vars.CEP" class="form-control k-textbox" id="textinput-ceP" placeholder="CEP" mask="" mask-placeholder="" ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-logradouro-16012" class="">
+                        <div class="form-group">
+                                <label for="textinput-logradouro" class="">Logradouro</label>
+                                <input type="text" ng-model="vars.Logradouro" class="form-control k-textbox" id="textinput-logradouro" placeholder="Logradouro" mask="" mask-placeholder="" ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-bairro-16012" class="">
+                        <div class="form-group">
+                                <label for="textinput-bairro" class="">Bairro</label>
+                                <input type="text" ng-model="vars.Bairro" class="form-control k-textbox" id="textinput-bairro" placeholder="Bairro" mask="" mask-placeholder="" ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-uf-16012" class="">
+                        <div class="form-group">
+                                <label for="textinput-uf" class="">UF</label>
+                                <input type="text" ng-model="vars.UF" class="form-control k-textbox" id="textinput-uf" placeholder="UF" mask="" mask-placeholder="" ng-required="false">
+                        </div>
+                    </div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </div>
+        </form>
+    </section>
+    <section class="form" ng-show="Endereco.editing || Endereco.inserting">
+        <form>
+            <div>
+                <!-- OneToN -->
+                <!-- OneToOne  end -->
+            </div>
+        </form>
+    </section>
+</div>
+
+
+</div>
